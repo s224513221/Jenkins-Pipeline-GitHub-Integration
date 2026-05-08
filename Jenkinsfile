@@ -61,7 +61,7 @@ pipeline{
         stage("Integration Tests on Staging") { 
 
             steps {
-                echo "Run integration tests using ${INTEGRATION_TESTING_TOOL} on the staging environment, ${STAGING_ENVIRONMENT}, to ensure the application functions as expected in a production-like environment."
+                echo "Run integration tests using ${INTEGRATION_TESTING_TOOL} on the ${STAGING_ENVIRONMENT}, to ensure the application functions as expected in a production-like environment."
             }
 
         }
