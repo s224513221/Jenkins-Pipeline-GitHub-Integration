@@ -15,6 +15,16 @@ pipeline{
     }
 
     stages {
+
+        stage("Build") {
+
+            steps {
+                echo "Fetch the source code from the directory path: ${DIRECTORY_PATH}."
+                echo "Compile the code package the code using ${AUTOMATION_TOOL}."
+            }
+
+        }
+        
     }
     
 }
