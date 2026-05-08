@@ -24,6 +24,15 @@ pipeline{
             }
 
         }
+
+        stage("Unit and Integration Tests") { 
+
+            steps {
+                echo "Run unit tests using ${UNIT_TESTING_TOOL} to ensure the code functions as expected."
+                echo "Run integration tests using ${INTEGRATION_TESTING_TOOL} to ensure the different components of the application work together as expected."
+            }
+
+        }
         
     }
     
