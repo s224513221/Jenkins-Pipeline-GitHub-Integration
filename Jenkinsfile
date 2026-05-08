@@ -33,6 +33,14 @@ pipeline{
             }
 
         }
+
+        stage("Code Analysis ") { 
+
+            steps {
+                echo "Analyse the quality of the code using ${ANALYSIS_TOOL} to ensure it meets industry standards."
+            }
+
+        }
         
     }
     
