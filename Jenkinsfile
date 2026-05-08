@@ -50,6 +50,14 @@ pipeline{
 
         }
         
+        stage("Deploy to Staging") { 
+
+            steps {
+                echo "Deploy the application to the staging server: ${STAGING_SERVER}."
+            }
+
+        }
+        
     }
     
 }
