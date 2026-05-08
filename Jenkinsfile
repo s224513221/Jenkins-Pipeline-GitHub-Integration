@@ -65,6 +65,15 @@ pipeline{
             }
 
         }
+
+        stage("Deploy to Production") { 
+
+            steps {
+                echo "Deploy the code to the production server: ${PRODUCTION_SERVER}."
+            }
+
+        }
+        
     }
     
 }
