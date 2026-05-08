@@ -41,6 +41,14 @@ pipeline{
             }
 
         }
+
+        stage("Security Scan") { 
+
+            steps {
+                echo "Perform a security scan on the code using ${SECURITY_TOOL} to identify any vulnerabilities."
+            }
+
+        }
         
     }
     
